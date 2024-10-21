@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Delivery Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap_form/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <header class="mb-4">
+                <h2 class="text-primary">Contact</h2>
+                <a href="#" class="btn btn-outline-primary login-link">Log in</a>
+            </header>
+
+            <form id="contactForm" novalidate>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email" required>
+                    <div id="emailError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="newsOffers">
+                    <label class="form-check-label" for="newsOffers">Email me with news and offers</label>
+                </div>
+
+                <h2 class="mt-4 mb-3 text-primary">Delivery</h2>
+
+                <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <select class="form-select" id="city" required>
+                        <option selected disabled value="">Select city from dropdown</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Multan</option>
+                        <option>Sahiwal</option>
+                        <option>Mian Channu</option>
+                        <option>Gujranwala</option>
+                        <option>Faisalabad</option>
+                        <option>Kot Radha Kishan</option>
+                    </select>
+                    <div id="cityError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country/Region</label>
+                    <input type="text" class="form-control" id="country" value="Pakistan" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                    <div id="firstNameError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last Name" required>
+                    <div id="lastNameError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter Your Address" required>
+                    <div id="addressError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cityInput" class="form-label">City</label>
+                    <input type="text" class="form-control" id="cityInput" placeholder="Enter your city" required>
+                    <div id="cityInputError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="postalCode" class="form-label">Postal code (optional)</label>
+                    <input type="text" class="form-control" id="postalCode" placeholder="Enter  your Postal Code">
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your Phone Number" required>
+                    <div id="phoneError" class="invalid-feedback"></div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="saveInfo">
+                    <label class="form-check-label" for="saveInfo">Save this information for next time</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap_form/script.js"></script>
+
+</body>
+</html>
